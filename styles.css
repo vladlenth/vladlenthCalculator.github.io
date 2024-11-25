@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+.body {
+  width: 400px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 20px 20px 20px;
+  background: #4a5a44;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75), inset -3px -2px 19px 1px rgba(84,83,84,1);
+}
+.results {
+  width: 98%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Audiowide', cursive;
+  text-align: right;
+  border: none;
+  font-size: 1.5em;
+  
+}
+
+.textContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-family: 'Audiowide';
+    color: white;
+}
+
+h3, h2, p {
+    margin-left: 20px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+h3.subText{
+    font-size: 0.8em;
+    margin-left: 5px;
+    margin-block-start: auto;
+    font-weight: 500;
+}
+.body .numbers button.number#0{
+    margin-left: 20px;
+}
+
+#expression, #result {
+  background-color: #63be8c;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 10px;
+}
+#result {
+  height: 60px;
+  font-size: 2.5em;
+  color: black;
+  border-bottom: 0;
+  border-radius: 0;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+#expression {
+  height: 20px;
+  border-top: none;
+  padding-bottom: 20px;
+  color:rgb(63, 63, 63);
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  overflow: hidden;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+
+.operations, .clears {
+  display: flex;
+  flex-direction: column;
+}
+.operations * {
+  font-size: 2em;
+  width: 100px;
+}
+
+.clears * {
+  background: #ff7402;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+}
+.clears .equals {
+    height: 130px;
+    width: 60px;
+}
+
+
+button {
+  border: 1px solid rgb(145, 145, 145);
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  font-size: 1.5em;
+  color: #ff7402;
+  background-color: rgb(63, 63, 63);
+  text-align: center;
+  outline: none;
+  font-family: 'Audiowide', cursive;
+  -webkit-box-shadow: 0px 3px 0px 0px #212121;
+  -moz-box-shadow: 0px 3px 0px 0px #212121;
+  box-shadow: 0px 3px 0px 0px #212121;
+}
+
+.numbers .number0 {
+    width: 111px;
+}
+
+button.operations{
+    width: 100px;
+}
+button:active {
+  transform: translateY(2px);
+}
+
